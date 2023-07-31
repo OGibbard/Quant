@@ -1,4 +1,8 @@
-def test(paramsList, averages, stocks):
+import pickle
+
+def test(paramsList):
+    with open('averages.pkl', 'rb') as file:
+        averages = pickle.load(file)
     start=0
     end=239
     total=0
