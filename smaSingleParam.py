@@ -24,15 +24,15 @@ def singleListTest(paramsList):
         for j in range(len(stocks)):
             if openAverages[k][paramsList[0],stocks[j]] > openAverages[k][paramsList[1],stocks[j]]:
                 total+=1
-                averagePercent+=((openAverages[k][paramsList[2],stocks[j]])/(openAverages[k][paramsList[3],stocks[j]]))
-                if openAverages[k][paramsList[2],stocks[j]] > openAverages[k][paramsList[3],stocks[j]]:
+                averagePercent+=((closeAverages[k][paramsList[2],stocks[j]])/(openAverages[k][paramsList[3],stocks[j]]))
+                if closeAverages[k][paramsList[2],stocks[j]] > openAverages[k][paramsList[3],stocks[j]]:
                     momentumWorks+=1
     try:
         averagePercent=averagePercent/total
     except:
         averagePercent=1
 
-    days = abs(paramsList[3]-paramsList[2])
+    days = abs(paramsList[3]-paramsList[2])+1
     perDay = (averagePercent**(1/days))
 
     if perDay>1.002:
@@ -79,6 +79,7 @@ def singlePickleTest(paramsList):
         total += sum((openCurrent.iloc[paramsList[0]] > openCurrent.iloc[paramsList[1]]).astype(int))
         momentumWorks += sum(((closeCurrent.iloc[paramsList[2]] > openCurrent.iloc[paramsList[3]]) & (openCurrent.iloc[paramsList[0]] > openCurrent.iloc[paramsList[1]])).astype(int))
         averagePercent += sum((closeCurrent.iloc[paramsList[2]])/(openCurrent.iloc[paramsList[3]])*((openCurrent.iloc[paramsList[0]] > openCurrent.iloc[paramsList[1]]).astype(int)))
+    
     try:
         averagePercent=averagePercent/total
     except:
@@ -102,3 +103,4 @@ def singlePickleTest(paramsList):
         with open('../Data/sp500/bestStrategies/Single/'+tempParams+'.txt','w') as file:
             for k in range(len(tempRead)):
                 file.write(tempRead[k]+'\n')
+    return(total, momentumWorks, averagePercent, perDay)

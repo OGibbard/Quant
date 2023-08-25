@@ -52,7 +52,7 @@ def doubleListTest(paramsList):
         tempRead.append("Of these times, the " + parameters[paramsList[4]] + " is higher than the " + parameters[paramsList[5]] + " " + str(momentumWorks2) + " times.")
         tempRead.append("Overall this is " + str(momentumWorks2/momentumWorks1) + " of the time.")
         tempRead.append('The average increase is '+(str(averagePercent))+".")
-        tempRead.append('This is '+str(perDay)+' increase per day.')
+        tempRead.append('This is '+str(perDay)+'  increase per day.')
         with open('../Data/sp500/bestStrategies/Double/'+tempParams+'.txt','w') as file:
             for k in range(len(tempRead)):
                 file.write(tempRead[k]+'\n')
@@ -94,7 +94,7 @@ def doublePickleTest(paramsList):
     days = abs(paramsList[5] - paramsList[4])+1
     perDay = averagePercent ** (1/days)
 
-    if perDay>1.003:
+    if perDay>1.0035:
 
         tempParams=''
         for i in paramsList:
@@ -106,7 +106,7 @@ def doublePickleTest(paramsList):
         tempRead.append("Of these times, the " + parameters[paramsList[4]] + " is higher than the " + parameters[paramsList[5]] + " " + str(momentumWorks2) + " times.")
         tempRead.append("Overall this is " + str(momentumWorks2/momentumWorks1) + " of the time.")
         tempRead.append('The average increase is '+(str(averagePercent))+".")
-        tempRead.append('This is '+str(perDay)+' increase per day.')
+        tempRead.append('This is '+str(perDay)+'  increase per day.')
         with open('../Data/sp500/bestStrategies/Double/'+tempParams+'.txt','w') as file:
             for k in range(len(tempRead)):
                 file.write(tempRead[k]+'\n')
