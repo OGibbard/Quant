@@ -4,7 +4,7 @@
 
 This is the code store for my quant trading algos.\
 SP500 data is minute bars from 2019-10-01 to 2024-09-19.\
-I use a fee level of 0.005 USD per trade as per IBKR when you trade over 200 shares.\
+I use a fee level of 0.005 USD per trade as per IBKR when you trade over 200 shares.
 
 ## Some of the best results over 5 years
 
