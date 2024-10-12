@@ -21,4 +21,4 @@ V1: Patterns based on all time between different levels of change.\
 V2: Test next 2 weeks based off last 2 weeks.\
 V3: Patterns based on all time, compare to data points before.\
 V4: Patterns based on all time, compare each point with previous.\
-V5: Test each tick by itself, depending on time of day.\
+V5: Test each tick by itself, depending on time of day.
