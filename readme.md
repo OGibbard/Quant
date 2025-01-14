@@ -14,7 +14,7 @@ I use a fee level of 0.005 USD per trade as per IBKR when you trade over 200 sha
 | 9.9x   | V4   | INTC   | 3.29   | 8.63    |
 | 95.2x  | V4   | TSLA   | 4.35   | 12.07   |
 
-## Algos
+## Algos, all technical analysis so far
 
 V0: Patterns based on all time with stop loss and take profit.\
 V1: Patterns based on all time between different levels of change.\
