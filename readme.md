@@ -1,5 +1,10 @@
 # Quant
 
+## Notes
+
+Most of the algos so far are optimised technical analysis.\
+The ideas are just some rough thoughts I had that I was interested in exploring.
+
 ## Latest full version is algo V4
 
 This is the code store for my quant trading algos.\
@@ -14,7 +19,7 @@ I use a fee level of 0.005 USD per trade as per IBKR when you trade over 200 sha
 | 9.9x   | V4   | INTC   | 3.29   | 8.63    |
 | 95.2x  | V4   | TSLA   | 4.35   | 12.07   |
 
-## Algos, all technical analysis so far
+## Algos
 
 V0: Patterns based on all time with stop loss and take profit.\
 V1: Patterns based on all time between different levels of change.\
@@ -22,3 +27,10 @@ V2: Test next 2 weeks based off last 2 weeks.\
 V3: Patterns based on all time, compare to data points before.\
 V4: Patterns based on all time, compare each point with previous.\
 V5: Test each tick by itself, depending on time of day.
+
+## Ideas
+
+Tech stock reversion\
+Inverse correlation between supermarket stocks and fast food stocks\
+Distribution of market cap in SP500 for arbitrage opportunity\
+GOOG and GOOGL patterns
