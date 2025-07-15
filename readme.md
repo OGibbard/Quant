@@ -1,5 +1,10 @@
 # Quant
 
+## Data
+
+Data is volume, weighted_volume, open, close, high, low, time, number_of_trades for each ticker in SP500.\
+Data is between 10-01-19 (1st October 2019) and 09-19-24, includes both during trading hours and outside trading hours.
+
 ## Notes
 
 Most of the algos so far are optimised technical analysis.\
